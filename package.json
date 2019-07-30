@@ -1,0 +1,19 @@
+{
+  "name": "nodegui-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Atul R <atulanand94@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "tsc && qode ./dist/index.js"
+  },
+  "dependencies": {
+    "@nodegui/nodegui": "^0.0.6-alpha",
+    "@nodegui/test": "^0.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "typescript": "^3.5.3"
+  }
+}
