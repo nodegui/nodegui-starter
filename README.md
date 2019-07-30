@@ -1,4 +1,4 @@
-# React Desktop Starter
+# NodeGui Starter
 
 To run:
 
