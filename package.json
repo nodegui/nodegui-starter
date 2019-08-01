@@ -6,13 +6,15 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "tsc && qode ./dist/index.js"
+    "build": "tsc",
+    "start": "tsc && qode ./dist/index.js",
+    "debug": "tsc && qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.0.6-alpha",
-    "@nodegui/test": "^0.0.10"
+    "@nodegui/nodegui": "^0.0.7-alpha"
   },
   "devDependencies": {
+    "@nodegui/test": "0.0.10",
     "@types/node": "^12.6.8",
     "typescript": "^3.5.3"
   }
