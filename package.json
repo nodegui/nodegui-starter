@@ -11,10 +11,9 @@
     "debug": "tsc && qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.0.7-alpha"
+    "@nodegui/nodegui": "^0.0.12"
   },
   "devDependencies": {
-    "@nodegui/test": "0.0.10",
     "@types/node": "^12.6.8",
     "typescript": "^3.5.3"
   }
