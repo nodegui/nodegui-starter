@@ -1,17 +1,29 @@
-import { QMainWindow, QWidget, QLabel, FlexLayout } from "@nodegui/nodegui";
+const {
+  QMainWindow,
+  QWidget,
+  QLabel,
+  FlexLayout
+} = require("@nodegui/nodegui");
 
 const win = new QMainWindow();
-//-------------------------------
+
 const centralWidget = new QWidget();
 centralWidget.setObjectName("myroot");
 const rootLayout = new FlexLayout();
 centralWidget.setLayout(rootLayout);
-//--------------------------------------
+
 const label = new QLabel();
 label.setObjectName("mylabel");
-label.setText("Hello World");
-//--------------------------------------
+label.setText("Hello");
+
+const label2 = new QLabel();
+label2.setText("World");
+label2.setInlineStyle(`
+  color: red;
+`);
+
 rootLayout.addWidget(label);
+rootLayout.addWidget(label2);
 win.setCentralWidget(centralWidget);
 win.setStyleSheet(
   `
@@ -26,4 +38,4 @@ win.setStyleSheet(
 );
 win.show();
 
-(global as any).win = win; // To prevent win from being garbage collected.
+(global as any).win = win;
