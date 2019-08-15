@@ -29,6 +29,9 @@ win.setStyleSheet(
   `
     #myroot {
       background-color: #009688;
+      height: '100%';
+      align-items: 'center';
+      justify-content: 'center';
     }
     #mylabel {
       font-size: 16px;
