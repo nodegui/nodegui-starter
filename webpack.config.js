@@ -16,11 +16,12 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.node$/,
-        loader: "native-ext-loader",
-        options: {
-          rewritePath: "./dist"
-        }
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [{ loader: "file-loader" }]
+      },
+      {
+        test: /\.node/i,
+        use: [{ loader: "node-loader" }, { loader: "file-loader" }]
       }
     ]
   },
