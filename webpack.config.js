@@ -21,7 +21,15 @@ module.exports = {
       },
       {
         test: /\.node/i,
-        use: [{ loader: "node-loader" }, { loader: "file-loader" }]
+        use: [
+          { loader: "node-loader" },
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
