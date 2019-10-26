@@ -11,15 +11,15 @@
     "debug": "webpack && qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.2.1"
+    "@nodegui/nodegui": "^0.3.0"
   },
   "devDependencies": {
-    "@types/node": "^12.6.8",
+    "@types/node": "^12.11.7",
     "file-loader": "^4.2.0",
     "node-loader": "^0.6.0",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   }
 }
