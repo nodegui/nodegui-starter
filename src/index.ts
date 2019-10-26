@@ -1,11 +1,12 @@
-const {
+import {
   QMainWindow,
   QWidget,
   QLabel,
   FlexLayout
-} = require("@nodegui/nodegui");
+} from "@nodegui/nodegui";
 
 const win = new QMainWindow();
+win.setWindowTitle("Hello World");
 
 const centralWidget = new QWidget();
 centralWidget.setObjectName("myroot");
