@@ -14,7 +14,7 @@
     "@nodegui/nodegui": "^0.5.1"
   },
   "devDependencies": {
-    "@types/node": "^12.12.7",
+    "@types/node": "^12.12.8",
     "file-loader": "^4.2.0",
     "node-loader": "^0.6.0",
     "ts-loader": "^6.2.1",
