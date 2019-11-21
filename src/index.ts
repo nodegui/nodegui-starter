@@ -1,9 +1,4 @@
-import {
-  QMainWindow,
-  QWidget,
-  QLabel,
-  FlexLayout
-} from "@nodegui/nodegui";
+import { QMainWindow, QWidget, QLabel, FlexLayout } from "@nodegui/nodegui";
 
 const win = new QMainWindow();
 win.setWindowTitle("Hello World");
@@ -37,6 +32,7 @@ win.setStyleSheet(
     #mylabel {
       font-size: 16px;
       font-weight: bold;
+      padding: 1;
     }
   `
 );
