@@ -19,7 +19,7 @@
     "node-loader": "^0.6.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.3",
-    "webpack": "^4.41.3",
+    "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   }
 }
