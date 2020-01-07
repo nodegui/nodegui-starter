@@ -8,6 +8,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js"
   },
+  node: {
+    __dirname: false,
+    __filename: false
+  },
   module: {
     rules: [
       {
@@ -20,13 +24,12 @@ module.exports = {
         use: [{ loader: "file-loader" }]
       },
       {
-        test: /\.node/i,
+        test: /\.node$/,
         use: [
-          { loader: "node-loader" },
           {
-            loader: "file-loader",
+            loader: "native-addon-loader",
             options: {
-              name: "[name].[ext]"
+              name: "[name]-[hash].[ext]"
             }
           }
         ]
