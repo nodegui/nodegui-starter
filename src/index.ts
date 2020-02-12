@@ -1,4 +1,5 @@
-import { QMainWindow, QWidget, QLabel, FlexLayout } from "@nodegui/nodegui";
+import { QMainWindow, QWidget, QLabel, FlexLayout, QPushButton, QIcon } from '@nodegui/nodegui';
+import logo from '../assets/logox200.png';
 
 const win = new QMainWindow();
 win.setWindowTitle("Hello World");
@@ -12,6 +13,9 @@ const label = new QLabel();
 label.setObjectName("mylabel");
 label.setText("Hello");
 
+const button = new QPushButton();
+button.setIcon(new QIcon(logo));
+
 const label2 = new QLabel();
 label2.setText("World");
 label2.setInlineStyle(`
@@ -19,6 +23,7 @@ label2.setInlineStyle(`
 `);
 
 rootLayout.addWidget(label);
+rootLayout.addWidget(button);
 rootLayout.addWidget(label2);
 win.setCentralWidget(centralWidget);
 win.setStyleSheet(
