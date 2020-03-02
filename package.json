@@ -11,9 +11,10 @@
     "debug": "webpack && qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.15.0-alpha"
+    "@nodegui/nodegui": "^0.15.0-alpha-4"
   },
   "devDependencies": {
+    "@nodegui/packer": "^1.2.0-alpha-6",
     "@types/node": "^13.1.4",
     "file-loader": "^5.0.2",
     "native-addon-loader": "^2.0.1",
