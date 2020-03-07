@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "^13.7.7",
-    "file-loader": "^5.0.2",
+    "file-loader": "^5.1.0",
     "native-addon-loader": "^2.0.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.4",
