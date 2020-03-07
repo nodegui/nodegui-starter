@@ -1,4 +1,5 @@
 const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: process.NODE_ENV || "development",
@@ -7,10 +8,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js"
-  },
-  node: {
-    __dirname: true,
-    __filename: true
   },
   module: {
     rules: [
@@ -21,21 +18,19 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [{
-          loader: "file-loader",
-          options: {
-            publicPath: "dist"
+        use: [
+          {
+            loader: "file-loader",
+            options: { publicPath: "dist" }
           }
-        }],
+        ]
       },
       {
         test: /\.node$/,
         use: [
           {
             loader: "native-addon-loader",
-            options: {
-              name: "[name]-[hash].[ext]"
-            }
+            options: { name: "[name]-[hash].[ext]" }
           }
         ]
       }
@@ -43,5 +38,6 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"]
-  }
+  },
+  plugins: [new CleanWebpackPlugin()]
 };
