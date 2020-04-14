@@ -17,7 +17,7 @@
     "@nodegui/packer": "^1.4.1",
     "@types/node": "^13.7.7",
     "clean-webpack-plugin": "^3.0.0",
-    "file-loader": "^5.1.0",
+    "file-loader": "^6.0.0",
     "native-addon-loader": "^2.0.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3",
