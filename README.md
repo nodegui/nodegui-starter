@@ -48,6 +48,12 @@ npm run build
 This will produce the js bundle along with assets inside the `./dist` directory
 
 ```sh
+npx nodegui-packer --init MyApp
+```
+
+This will produce the deploy directory containing the template. You can modify this to suite your needs. Like add icons, change the name, description and add other native features or dependencies. Make sure you commit this directory.
+
+```sh
 npx nodegui-packer --pack ./dist
 ```
 
