@@ -11,7 +11,7 @@
     "debug": "webpack && qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.30.1"
+    "@nodegui/nodegui": "^0.33.0"
   },
   "devDependencies": {
     "@nodegui/packer": "^1.4.1",
