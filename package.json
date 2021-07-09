@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack --mode production",
     "start": "webpack && qode ./dist/index.js",
     "debug": "webpack && qode --inspect ./dist/index.js"
   },
