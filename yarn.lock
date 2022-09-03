@@ -70,10 +70,10 @@
     node-fetch "^2.6.0"
     progress "^2.0.3"
 
-"@nodegui/nodegui@^0.57.0":
-  version "0.57.0"
-  resolved "https://registry.yarnpkg.com/@nodegui/nodegui/-/nodegui-0.57.0.tgz#1a0324ccbef37d41ae91a94ed1f7e83e78ec4abe"
-  integrity sha512-ffy8WXkd2021uQGHMFhf7g9tz0yZLQfS/twlkD2e5YpUFFAD5cTNe7699BM8UIy5MaeutdPeiR84tZK0bYc1sg==
+"@nodegui/nodegui@^0.57.1":
+  version "0.57.1"
+  resolved "https://registry.yarnpkg.com/@nodegui/nodegui/-/nodegui-0.57.1.tgz#dcab2a3c9beeb744669c87f18809f03b44074dfd"
+  integrity sha512-husxEJeohB6WHoxa+ob9/BoNhPc/WJL3NQOGmfjb6DZMuPe3bwVu/E/63bvGp7SZbZ3hsIM8l4J5x99U/4WYbA==
   dependencies:
     "@nodegui/artifact-installer" "^1.1.0"
     "@nodegui/qode" "^16.4.3"
