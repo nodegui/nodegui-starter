@@ -1,3 +1,6 @@
+## :warning: This starter repository isn't being actively maintained. :point_right: Go to [nodegui-simple-starter](https://github.com/sedwards2009/nodegui-simple-starter) for a modern starter template.
+
+
 # nodegui-starter
 
 **Clone and run for a quick way to see NodeGui in action.**
